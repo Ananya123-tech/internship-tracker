@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Internships</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>📋 Stored Internships</h2>
+
+{% for user in users %}
+<div style="background:#f2f2f2; padding:10px; margin:10px; border-radius:8px;">
+<b>{{ user.name }}</b><br>
+{{ user.college }}<br>
+{{ user.domain }}<br>
+{{ user.duration }}
+</div>
+{% endfor %}
+
+<a href="/">⬅ Back Home</a>
+
+</div>
+
+</body>
+</html>

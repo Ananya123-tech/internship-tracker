@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internship Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>🚀 Internship Tracker</h2>
+
+<form method="POST">
+
+<input type="text" name="name" placeholder="👤 Your Name" required>
+<input type="text" name="college" placeholder="🏫 College Name" required>
+<input type="text" name="domain" placeholder="💻 Internship Domain" required>
+<input type="text" name="duration" placeholder="⏳ Duration" required>
+
+<button type="submit">Add Internship</button>
+
+</form>
+
+<br>
+
+<a href="/view">📋 View Internships</a>
+
+</div>
+
+</body>
+</html>
